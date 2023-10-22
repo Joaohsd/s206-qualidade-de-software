@@ -5,4 +5,4 @@ package-lock.json
 cypress.config.js
 
 # Ignore .node_modules folders
-.node_modules/
+node_modules/
