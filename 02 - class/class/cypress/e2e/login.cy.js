@@ -30,6 +30,14 @@ function createUser(){
   return userInfo
 }
 
+function logInUser(userName, password){
+  cy.get('#username').type(userName)
+  cy.get('#password').type(password)
+  cy.get('.btn-primary').click()
+
+  cy.get('h1.ng-binding').should('contain.text', userName)
+}
+
 describe('Creating test scenario for globalsqa site', () => {
   
   it.skip('Test case: Registering an user successfully', () => {
@@ -71,14 +79,31 @@ describe('Creating test scenario for globalsqa site', () => {
 
   })
 
-  it('Test case: Log in successfully', () => {
+  it.skip('Test case: Log in successfully', () => {
     const userInfo = createUser()
     
-    cy.get('#username').type(userInfo[0])
-    cy.get('#password').type(userInfo[1])
-    cy.get('.btn-primary').click()
-    
+    logInUser(userInfo[0], userInfo[1])
+
     cy.get('h1.ng-binding').should('contain.text', userInfo[0])
+  })
+
+  it('Test case: Deleting user successfully', () => {
+    const userInfo = createUser()
+    
+    logInUser(userInfo[0], userInfo[1])
+    
+    cy.get('.ng-binding > a').click()
+    cy.get('h1.ng-binding').should('not.contain.text', userInfo[0])
+  })
+
+  it('Test case: Log out successfully', () => {
+    const userInfo = createUser()
+    
+    logInUser(userInfo[0], userInfo[1])
+ 
+    cy.get('.btn:first').click()
+    cy.get('h2').should('have.text', 'Login')
+
   })
 
 })
