@@ -39,3 +39,7 @@ The **npm** already comes with **node**.
 While I was testing this site, I decided to not change the website. I was getting an error 'Timeout' while cypress requests for this website and wait for the page loaded. There is an issue opened on github related to this problem and can be found [here](https://github.com/cypress-io/cypress/issues/28114).
 
 ### **In order to correct it, just run these tests two or three times at least and they will be executed correctly.**  
+
+The error can be seen in the image below:
+
+![Report](assets/reports.png)
