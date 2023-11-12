@@ -1,13 +1,15 @@
 # **UI Test with Cypress and IMDB site**
 
-The goal of this project is testing IMDB, which is a site for searching movies and series. In order to do that, I've created 7 tests:
+The goal of this project is testing IMDB, which is a site for searching movies and series. In order to do that, I've created 8 tests:
 
 *   Testing correct Log in IMDB site;
 *   Testing Log out from IMDB site;
-*   Testing incorrect Log in IMDB site because of the PASSWORD;
 *   Testing correct table with Top 250 Movies;
 *   Testing if genre filter list appears for movies;
 *   Testing if what to watch works correctly;
+*   Testing if help page is reachable;
+*   Testing if Log In in help page is working (BUG);
+*   Testing incorrect Log in IMDB site because of the PASSWORD;
 
 ## **Pre-requirements**
 ---

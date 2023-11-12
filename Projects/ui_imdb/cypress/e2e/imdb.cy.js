@@ -84,7 +84,7 @@ describe('Test Scenario: Testing IMDB site about movies', () => {
     cy.get(':nth-child(3) > .ipc-chip-list--base > .ipc-chip-list__scroller').children().should('have.length.above',expectedMinNumberGenre)
   })
 
-  it('Test Case: What to watch works correctly', () => {
+  it('Test Case: Testing if what to watch works correctly', () => {
     // given
     const expectedText = 'What to Watch'
 
