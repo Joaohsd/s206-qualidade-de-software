@@ -1,9 +1,6 @@
 # Ignore package-lock.json files
 package-lock.json
 
-# Ignore cypress.config.js files
-cypress.config.js
-
 # Ignore .node_modules folders
 node_modules/
 
