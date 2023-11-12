@@ -20,11 +20,11 @@ The goal of this project is testing IMDB, which is a site for searching movies a
 
 ## **Running tests**
 ---
-In order to **Test** the project, use the commands below in root folder of this project:
+In order to **Test** the project, use the commands below in root folder of this project. Specify the browser that you want to use replacing "<browser>" for the the browser that you want to use (chrome, firefox, electron or edge):
 
 ```shell
 npm i
-./node_modules/.bin/cypress run --spec 'cypress/e2e/**/'
+./node_modules/.bin/cypress run --spec 'cypress/e2e/**/' --browser <browser>
 ```
 
 If you do not have **node** installed, install it! You can use (**for Linux environment**):
