@@ -27,6 +27,8 @@ npm i
 ./node_modules/.bin/cypress run --spec 'cypress/e2e/**/' --browser <browser>
 ```
 
+After running the tests, the reports will be available at cypress/reports folder. Just open the reports in your browser.
+
 If you do not have **node** installed, install it! You can use (**for Linux environment**):
 
 ```shell
