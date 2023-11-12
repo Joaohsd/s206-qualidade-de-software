@@ -6,3 +6,7 @@ cypress.config.js
 
 # Ignore .node_modules folders
 node_modules/
+
+# Ignore reports and screenshots folder from cypress
+**/cypress/reports/
+**/cypress/screenshots/
